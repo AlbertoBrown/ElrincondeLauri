@@ -1,0 +1,149 @@
+/* ===============================================
+   LANDING.CSS - Estilos Landing Page
+   El Rincón de Lauri
+   =============================================== */
+
+/* ===== HERO SECTION ===== */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 40px;
+    background-color: #ffffff;
+}
+
+.hero-content {
+    max-width: 700px;
+    text-align: center;
+}
+
+.hero-image {
+    margin-bottom: 40px;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f7f7f7;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+    letter-spacing: -1px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.15rem;
+    font-weight: 300;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ===== INTRO SECTION ===== */
+.intro {
+    padding: 80px 40px;
+    background-color: #f7f7f7;
+}
+
+.intro-text {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 25px;
+    text-align: center;
+    line-height: 1.9;
+}
+
+.intro-text:last-child {
+    margin-bottom: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 75vh;
+        padding: 60px 25px;
+    }
+
+    .profile-image {
+        width: 160px;
+        height: 160px;
+    }
+
+    .hero-title {
+        font-size: 2.3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.05rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .intro {
+        padding: 60px 25px;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+    }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+    .hero {
+        min-height: auto;
+        padding: 50px 20px;
+    }
+
+    .profile-image {
+        width: 140px;
+        height: 140px;
+    }
+
+    .hero-title {
+        font-size: 1.9rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 35px;
+    }
+
+    .intro {
+        padding: 50px 20px;
+    }
+
+    .intro-text {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+}

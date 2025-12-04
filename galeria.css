@@ -1,0 +1,129 @@
+/* ===============================================
+   GALERIA.CSS - Estilos Galería
+   El Rincón de Lauri
+   =============================================== */
+
+/* ===== GALERÍA SECTION ===== */
+.gallery-section {
+    padding: 80px 40px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.gallery-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('img/mind2.png'), url('img/mind8.png');
+    background-size: 300px, 350px;
+    background-position: top 100px left 50px, bottom 150px right 80px;
+    background-repeat: no-repeat, no-repeat;
+    opacity: 0.08;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.gallery-section > .container {
+    position: relative;
+    z-index: 1;
+}
+
+.gallery-intro {
+    text-align: center;
+    font-size: 1.05rem;
+    color: #666;
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== GRID DE GALERÍA ===== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.gallery-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    aspect-ratio: 3/4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-image-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery-image-wrapper:hover .gallery-image {
+    transform: scale(1.05);
+}
+
+.gallery-caption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #999;
+    font-weight: 300;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .gallery-section {
+        padding: 60px 25px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .gallery-intro {
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+    .gallery-section {
+        padding: 50px 20px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .gallery-intro {
+        font-size: 0.95rem;
+        margin-bottom: 40px;
+    }
+
+    .gallery-caption {
+        font-size: 0.85rem;
+    }
+}

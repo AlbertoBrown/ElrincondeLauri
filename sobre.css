@@ -1,0 +1,113 @@
+/* ===============================================
+   SOBRE.CSS - Estilos Sobre Lauri
+   El Rincón de Lauri
+   =============================================== */
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+    padding: 80px 40px;
+    background-color: #ffffff;
+}
+
+.about-content {
+    margin-top: 50px;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 2;
+    color: #555;
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+.about-text:last-of-type {
+    margin-bottom: 40px;
+}
+
+/* ===== CITA ===== */
+.quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 300;
+    color: #333;
+    text-align: center;
+    margin: 50px 0;
+    padding: 30px 40px;
+    border-left: 3px solid #1a1a1a;
+    background-color: #f7f7f7;
+    line-height: 1.8;
+}
+
+/* ===== FIRMA ===== */
+.about-signature {
+    font-size: 1.05rem;
+    color: #666;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.about-signature strong {
+    font-weight: 500;
+    color: #1a1a1a;
+    font-size: 1.15rem;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 60px 25px;
+    }
+
+    .about-text {
+        font-size: 1.05rem;
+        margin-bottom: 30px;
+    }
+
+    .quote {
+        font-size: 1.1rem;
+        padding: 25px 30px;
+        margin: 40px 0;
+    }
+
+    .about-signature {
+        font-size: 1rem;
+        margin-top: 40px;
+    }
+
+    .about-signature strong {
+        font-size: 1.1rem;
+    }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+    .about-section {
+        padding: 50px 20px;
+    }
+
+    .about-text {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+        line-height: 1.9;
+    }
+
+    .quote {
+        font-size: 1rem;
+        padding: 20px 25px;
+        margin: 35px 0;
+        border-left-width: 2px;
+    }
+
+    .about-signature {
+        font-size: 0.95rem;
+        margin-top: 35px;
+    }
+
+    .about-signature strong {
+        font-size: 1.05rem;
+    }
+}

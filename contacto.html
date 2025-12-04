@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con Lauri para encargar ilustraciones personalizadas">
+    <title>Contacto - El Rincón de Lauri</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    
+    <!-- LOADER -->
+    <div class="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">El Rincón de Lauri</div>
+            
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="galeria.html" class="nav-link">Galería</a>
+                <a href="sobre-lauri.html" class="nav-link">Sobre Lauri</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="contacto.html" class="nav-link active">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTACTO -->
+    <section class="contact-section">
+        <div class="container-small">
+            
+            <h1 class="page-title">Hablemos</h1>
+            
+            <p class="contact-intro">
+                Si algún dibujo te ha hecho sentir algo (o simplemente te gusta cómo se ve), 
+                escríbeme. También si quieres algo personalizado, aunque te aviso: 
+                mis dibujos tienen vida propia y a veces salen como quieren.
+            </p>
+
+            <form class="contact-form" action="#" method="POST">
+                
+                <div class="form-group">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input 
+                        type="text" 
+                        id="nombre" 
+                        name="nombre" 
+                        class="form-input" 
+                        placeholder="Tu nombre"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        class="form-input" 
+                        placeholder="tu@email.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea 
+                        id="mensaje" 
+                        name="mensaje" 
+                        class="form-textarea" 
+                        rows="6" 
+                        placeholder="Cuéntame qué ilustración te gusta o qué te gustaría encargar..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">Enviar</button>
+
+            </form>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© El Rincón de Lauri — Ilustraciones hechas con calma y corazón.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Instagram</a>
+                <a href="#" class="footer-link">Pinterest</a>
+                <a href="#" class="footer-link">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+    <script src="form-handler.js"></script>
+    <script src="music-player.js"></script>
+
+</body>
+</html>
